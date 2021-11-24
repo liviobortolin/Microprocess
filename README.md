@@ -1,9 +1,9 @@
-# M300 - Plattformübergreifende Dienste in ein Netzwerk integrieren
-8883
+# M242 - Mikroprozessoranwendungen realisieren
 
-## LB3 Docker
 
-Folgend erbringe ich meine Leistungsnachweise für die Lernbeurteilung 3 des Modul 300. 
+## LB3 IoTKit
+
+Folgend erbringe ich meine Leistungsnachweise für die Lernbeurteilung 3 des Modul 242. 
 
 # Inhaltsverzeichnis
 - [K1](#K1)
@@ -144,7 +144,7 @@ Jede Funktion kann unabhängig entwickelt und implementiert werden.
 
 ## K3 IoTKit
 [1. Beispiel Programm verwendet](#1-Beispiel-Programm-verwendet)<br/>
-[2. Beispiel Programm geringfügig abgeän-dert, z.B. nur URL](#2-Beispiel-Programm-geringfügig-abgeän-dert,-z.B.-nur-URL)<br/>
+[2. Beispiel Programm geringfügig abgeän-dert, z.B. nur URL](#2-Beispiel-Programm-geringfügig-abgeändert,-z.B.-nur-URL)<br/>
 [3. Beispiel Programm erweitert, z.B. mehr Sensordaten senden oder andere Daten.](#3-Beispiel-Programm-erweitert,-z.B.-mehr-Sensordaten-senden-oder-andere-Daten.)<br/>
 
 
