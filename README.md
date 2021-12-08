@@ -242,6 +242,22 @@ Logs auf dem Cmputer aufgezeichnet:
 ![Log_network](img/Log_network.png)
 
 
+Anstatt ein Programm zu erweitern haben wir uns dazu entschieden einen eigenen Service zu entwicklen. Hierfür müssen folgende Funktionalitäten im Programm für den Mikroprozessor implementiert werden:
+• Aktuelle Zeit holen
+• Wiederholtes senden der aktuellen Daten
+• HTTPS POST Request
+◦ Auth-Token Header
+◦ Temperatur
+◦ Gerätename
+◦ Aktuelle Temperatur
+• Response Handling
+◦ Zusätzlicher Text bei Fehlern
+◦ LED an- und ausschalten je nach Fehler
+Hier haben wir als erstes damit angefangen einen HTTPS Request auszuführen.
+Hierfür haben wir die mbed-http library verwendet.
+Um dies zu testen haben wir folgenden Code verwendet:
+
+
 ## K5 (Cloud) Dienst
 [1. (Cloud) Dienst aus den Beispielen verwen-det](#1-(Cloud)-Dienst-aus-den-Beispielen-verwen-det)<br/>
 [2. Neuen, welcher nicht in den Beispielen vorkommt, Dienst verwendet](#2-Neuen,-welcher-nicht-in-den-Beispielen-vorkommt,-Dienst-verwendet)<br/>
