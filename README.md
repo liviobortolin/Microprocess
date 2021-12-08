@@ -61,67 +61,100 @@ Anbei dokumentiere ich meinen Wissenstand und definiere meinen Fortschritt.
 #### Tag 1 27.10.21
 
 Heute haben wir mit dem Modul 242 angefangen. Wir haben unser Gerät mit den nötigsten Softwares installiert. 
-Diese Tools haben wir installiert:
+Diese Tools haben wir installiert: Mbed, MQTT Explorer und eine einen Hypervisor.
 
 Zusätzlicher Wissenstand in folgenden Schwerpunkten: 
+Es war für mich eine herausforderung mich mit diesm Thema auseinanderzusetzen. Doch ich bin zuversichtig, dass ich einiges Lernen werde.
 
 ##### IoT
 
-
+-nutzt Aktoren und Sensoren
+-ICT Protokol
 
 ##### Sensoren
 
-
+-nimmt Umgebung war und
+-fasst Umebung zusammen
 
 ##### Aktoren
 
-
+-Das Resultat der Sonsorig
+-Hier werden die Sensoren umgesetzt
 
 ##### Service
 
-
+-verschiedene Diensten kennengelernt, die relevant sind für diese Modul.
 
 
 #### Tag 2 10.11.21
 
+Heute habe ich ich vertieft mit dem HTTP Modul auseinandergesetzt
 
 Zusätzlicher Wissenstand in folgenden Schwerpunkten: 
+Es war für mich eine herausforderung mich mit diesm Thema auseinanderzusetzen. Doch ich bin zuversichtig, dass ich einiges Lernen werde.
 
 ##### IoT
 
-
+-Internes Nerzwerk aufbauen
 
 ##### Sensoren
 
-
+-nichts neues
 
 ##### Aktoren
 
-
+-nichts neues
 
 ##### Service
 
+-HTTP 
 
 #### Tag 3 24.11.2021
 
-
+Heute habe das Modul beendet in dem ich alles nochmals anschauen musst um auch die LB1 zu schreiben.
 
 Zusätzlicher Wissenstand in folgenden Schwerpunkten: 
+Es war für mich eine herausforderung mich mit diesm Thema auseinanderzusetzen. Doch ich bin zuversichtig, dass ich einiges Lernen werde.
 
 ##### IoT
 
-
+-Internes Nerzwerk aufbauen
 
 ##### Sensoren
 
-
+-nichts neues
 
 ##### Aktoren
 
-
+-nichts neues
 
 ##### Service
 
+-Brocker mit Mosquitto
+
+
+#### Tag 3 08.12.2021
+
+Heute habe ich ich vertieft mit dem Brocker Mosquitto auseinandergesetzt.
+
+Zusätzlicher Wissenstand in folgenden Schwerpunkten: 
+Es war für mich eine herausforderung mich mit diesm Thema auseinanderzusetzen. Doch ich bin zuversichtig, dass ich einiges Lernen werde.
+
+##### IoT
+
+-Internes Nerzwerk aufbauen
+
+##### Sensoren
+
+-nichts neues
+
+##### Aktoren
+
+-nichts neues
+
+##### Service
+
+-Brocker mit Mosquitto
 
 
 
@@ -129,7 +162,9 @@ Zusätzlicher Wissenstand in folgenden Schwerpunkten:
 
 Die Vorteile der Microservices sind:
 
-- 
+- Es enthaltet mehr über als die CPU
+- Es ist Kostengünstig
+- Es dient dazu, Gegenstände ins Netzwerk zu integrieren
 
 
 ### Microservices
@@ -139,7 +174,7 @@ Jede Funktion kann unabhängig entwickelt und implementiert werden.
 
 ### 4. Anhand der Dokumentation können Dritte das Projekt nachbauen
 
-
+Siehe Arbeitsschritte in Kriterium - [4](#K4)
 
 
 ## K3 IoTKit
@@ -150,39 +185,61 @@ Jede Funktion kann unabhängig entwickelt und implementiert werden.
 
 ### 1. Beispiel Programm verwendet
 
-
+Siehe - [Gtthub von Denis Sabotic](https://github.com/saboticdenis/M242_http)
 
 
 ### 2. Beispiel Programm geringfügig abgeän-dert, z.B. nur URL
 
-
+Siehe - [Gtthub von Denis Sabotic](https://github.com/saboticdenis/M242_http)
 
 ### 3. Beispiel Programm erweitert, z.B. mehr Sensordaten senden oder andere Daten.
 
-
+Siehe - [Gtthub von Denis Sabotic](https://github.com/saboticdenis/M242_http)
 
 
 ## K4 Gateway / Edge
 [1. Eigenen Gateway/Edge aufgesetzt (Rasp-berry Pi, VMs etc.)](#1-Eigenen-Gateway/Edge-aufgesetzt-(Rasp-berry-Pi,-VMs-etc.))<br/>
 [2. Gateway Dienst installiert, z.B. MQTT Bro-ker mosquitto](#2-Gateway-Dienst-installiert,-z.B.-MQTT-Bro-ker-mosquitto)<br/>
-[3. Zusätzlichen Dienst, für Workflow Abhand-lung, z.B. Node-RED installiert](#3-Zusätzlichen-Dienst,-für-Workflow-Abhand-lung,-z.B.-Node-RED-installiert)
-[4. Weiteren Gateway / Protokoll Dienst instal-liert und funktionsfähig](#4-Weiteren-Gateway-/-Protokoll-Dienst-installiert-und-funktionsfähig)
+[3. Weiteren Gateway / Protokoll Dienst instal-liert und funktionsfähig](#3-Weiteren-Gateway-/-Protokoll-Dienst-installiert-und-funktionsfähig)
 
 
 
 ### 1.Eigenen Gateway/Edge aufgesetzt (Rasp-berry Pi, VMs etc.)
 
+Ich kreire eine normale Linux Ubuntu VM auf VMworkstation Pro. wichtig dabei, dass die Netzwerk konfiguration auf Bridged gesetzt ist:
 
+![VM-settings](img/VM_config.png)
 
 ### 2.Gateway Dienst installiert, z.B. MQTT Bro-ker mosquitto
 
+Mosquitto installieren undkonfigurieren:
+
+![mosquitto_install](img/mosquitto_install.png)
+
+![mosquittoConf-ändern](img/mosquittoConf-ändern.png)
+
+Zudem habe ich zur Sicherheit noch ein Benutzername mit Password erstellt. Um die authentifikation zu gewährleisten:
+
+![set_pwd](img/set_pwd.png)
 
 
-### 3.Zusätzlichen Dienst, für Workflow Abhand-lung, z.B. Node-RED installiert
+## 3.Weiteren Gateway / Protokoll Dienst instal-liert und funktionsfähig
 
+MQTT in Netzwerk integriert, so dass auch externe Geräte darauf Zugreiffen können. Siehe Explorer
 
+![MQTT_explorer](img/MQTT_explorer.png)
 
-## 4.Weiteren Gateway / Protokoll Dienst instal-liert und funktionsfähig
+Smartphone konfiguriert, um mit einem Handy auf den Broker Zugreiffen zu können:
+
+![Smartphone_setting](img/Smartphone_setting.jpeg)
+
+![Smartphone_send](img/Smartphone_send.jpeg)
+
+![Smartphone_log](img/Smartphone_log.jpeg)
+
+Logs auf dem Cmputer aufgezeichnet:
+
+![Log_network](img/Log_network.png)
 
 
 ## K5 (Cloud) Dienst
@@ -210,8 +267,18 @@ Jede Funktion kann unabhängig entwickelt und implementiert werden.
 
 ### 1. Allgemein (Kreativität, Komplexität, Um-fang
 
+Sowohl unser Projekt, wie auch diese Dokumentation habe ich umfangreich gelöst.
+
+Ich denke die Kreativität hätte mehr lauf finden könne, wenn wir mehr Zeit in der Schule hätten.
+
 ### 2. Umsetzung eigener Ideen
+
+Smartphone umsetzung [4](#K4)
 
 ### 3. Persönlicher Lernentwicklung (Vergleich Vorwissen – Wissenszuwachs
 
+Bisher habe ich IoT-Geräte, insbesondere MCUs, nicht angefasst. Ich habe den Raspberry Pi einmal in einem anderen Modul verwendet. Aber das ist es. Ich nutze täglich verschiedene IoT-Geräte im Bereich Smart Home. Bei Cloud-Diensten muss ich häufiger beraten.
+
 ### 4. Reflexion
+
+Ich denke, meine Arbeit an dem Modul ist insgesamt gut vorangekommen, aber vielleicht sollte ich die Bewertungskriterien früher überprüfen, weil ich gemerkt habe, dass ich nicht viel von dem aufgenommen habe, was wir aufnehmen sollten. So viele Dinge mussten wir zweimal machen, weil wir sie nicht aufgenommen haben. Ansonsten haben wir sehr gut zusammengearbeitet und gute Fortschritte gemacht
